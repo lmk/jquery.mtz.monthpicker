@@ -61,13 +61,13 @@
                     data = $this.data('monthpicker'),
                     year = (options && options.year) ? options.year : (new Date()).getFullYear(),
                     settings = $.extend({
-                        pattern: 'mm/yyyy',
+                        pattern: 'yyyy/mm',
                         selectedMonth: null,
                         selectedMonthName: '',
                         selectedYear: year,
                         startYear: year - 10,
-                        finalYear: year + 10,
-                        monthNames: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                        finalYear: year,
+                        monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
                         id: "monthpicker_" + (Math.random() * Math.random()).toString().replace('.', ''),
                         openOnFocus: true,
                         disabledMonths: []
